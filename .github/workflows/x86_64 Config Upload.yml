@@ -75,7 +75,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
                 
-    - name: SSH远程连接（配置固件）
+    - name: SSH远程连接
       uses: P3TERX/ssh2actions@v1.0.0
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
       env:
@@ -93,7 +93,7 @@ jobs:
       if: env.UPLOAD_CONFIG == 'true'
       with:
         name: ${{ env.FILE_NAME }}-${{ env.DATE1 }}-
-        path: x86_64.config
+        path: config.txt
         
     - name: 检查空间使用情况
       if: (!cancelled())
