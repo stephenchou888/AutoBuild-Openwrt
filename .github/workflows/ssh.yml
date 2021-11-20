@@ -108,10 +108,3 @@ jobs:
         repository: ${{ github.repository }}    # 运行工作流的存储库的名称。
         retain_days: 1                          # 工作流的保留天数进行比较的天数       
         keep_minimum_runs: 0                    # 工作流程保留的最少运行次数
-        
-    - name: 取消编译
-      uses: potiuk/cancel-workflow-runs@master
-      with:
-        cancelMode: self
-        notifyPRCancel: true
-        token: ${{ secrets.RELEASES_TOKEN }}
