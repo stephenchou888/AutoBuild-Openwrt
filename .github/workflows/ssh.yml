@@ -1,4 +1,4 @@
-name: 提取config
+name: ssh config
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -13,7 +13,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   CONFIG_FILE: x86_64.config
-  CONFIG_FILE: r2s.config   
+  #CONFIG_FILE: r2s.config   
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_CONFIG: true
