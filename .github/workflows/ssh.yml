@@ -1,4 +1,4 @@
-name: ssh config
+name: 提取config
 on:
   repository_dispatch:
   workflow_dispatch:
