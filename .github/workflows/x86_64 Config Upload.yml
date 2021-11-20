@@ -1,4 +1,4 @@
-name: 提取config
+name: 提取 x86_64 config
 on:
   repository_dispatch:
   workflow_dispatch:
@@ -12,8 +12,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: x86_64.config
-  #CONFIG_FILE: r2s.config   
+  CONFIG_FILE: x86_64.config 
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_CONFIG: true
@@ -27,7 +26,7 @@ jobs:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
 
-    name: 提取config
+    name: 提取 x86_64 config
     strategy:
       fail-fast: true
       
@@ -94,7 +93,7 @@ jobs:
       if: env.UPLOAD_CONFIG == 'true'
       with:
         name: ${{ env.FILE_NAME }}-${{ env.DATE1 }}-
-        path: config.txt
+        path: x86_64.config
         
     - name: 检查空间使用情况
       if: (!cancelled())
