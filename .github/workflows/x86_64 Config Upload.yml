@@ -12,7 +12,9 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: x86_64.config 
+  FEEDS_CONF: feeds.conf.default
+  CONFIG_FILE: x86_64.config
+  DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   SSH_ACTIONS: false
   UPLOAD_CONFIG: true
@@ -60,13 +62,6 @@ jobs:
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "DATE1=$(date "+%Y.%m.%d.%H%M")" >> $GITHUB_ENV
-
-    - name: 加载自定义 feeds.conf 文件
-      run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
-        chmod +x $DIY_P1_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: 更新软件包
       run: cd openwrt && ./scripts/feeds update -a
