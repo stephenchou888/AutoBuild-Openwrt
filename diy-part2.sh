@@ -38,4 +38,4 @@ git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-p
 git clone https://github.com/kiddin9/openwrt-bypass package/openwrt-bypass
 
 # 获取 openclash
-git clone https://github.com/vernesong/OpenClash package/luci-app-OpenClash
+# git clone https://github.com/vernesong/OpenClash package/luci-app-OpenClash
