@@ -23,7 +23,7 @@
 # └────────────────────────────────────────────────────────┘
 #
 
-name: x86_64 config
+name: 86config
 
 on:
   workflow_dispatch:
