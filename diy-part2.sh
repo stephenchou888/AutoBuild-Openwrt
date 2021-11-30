@@ -29,7 +29,7 @@ git clone https://github.com/jerrykuku/luci-app-vssr package/helloworld/luci-app
 # 获取主题
 git clone https://github.com/Kinodi/luci-theme-atmaterial package/luci-theme-atmaterial
 git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
-git clone https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
+git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 
 # 获取关机应用
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
