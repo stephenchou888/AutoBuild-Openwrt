@@ -39,3 +39,6 @@ git clone https://github.com/kiddin9/openwrt-bypass package/openwrt-bypass
 
 # 获取 openclash
 git clone https://github.com/vernesong/OpenClash package/luci-app-OpenClash
+
+# 获取 netdata
+git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
