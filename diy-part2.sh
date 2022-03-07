@@ -35,7 +35,7 @@ git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 
 # 获取 openwrt-bypass
-# git clone https://github.com/kiddin9/openwrt-bypass package/openwrt-bypass
+git clone https://github.com/kiddin9/openwrt-bypass package/openwrt-bypass
 
 # 获取 openclash
 # git clone https://github.com/vernesong/OpenClash package/luci-app-OpenClash
