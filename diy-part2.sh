@@ -14,14 +14,14 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
 # 获取luci-app-smartdns
-git clone -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+# git clone -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
 
 # 获取luci-app-dnsfilter
-git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
+# git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
 
 # 获取hello world和依赖
-git clone https://github.com/jerrykuku/lua-maxminddb package/helloworld/lua-maxminddb
-git clone https://github.com/jerrykuku/luci-app-vssr package/helloworld/luci-app-vssr
+# git clone https://github.com/jerrykuku/lua-maxminddb package/helloworld/lua-maxminddb
+# git clone https://github.com/jerrykuku/luci-app-vssr package/helloworld/luci-app-vssr
 
 # 获取主题
 git clone https://github.com/Kinodi/luci-theme-atmaterial package/luci-theme-atmaterial
