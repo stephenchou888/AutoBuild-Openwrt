@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build kenzok_ipv6 6.0 OpenWrt
+name: Build kenzok_ipv6 6.1 OpenWrt
 
 on:
   repository_dispatch:
